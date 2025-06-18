@@ -1,0 +1,153 @@
+<style>
+  .libros {
+    padding: 100px 0;
+    background-color: #f8f6f2;
+  }
+
+  .libros h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #5b391d;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  .libros-subtitle {
+    text-align: center;
+    color: #a0845c;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+  }
+
+  .libros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+  }
+
+  .libro-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .libro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .libro-image {
+    height: 250px;
+    background: linear-gradient(135deg, #e8e2d8, #d4c4b0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #5b391d;
+  }
+
+  .libro-content {
+    padding: 30px;
+  }
+
+  .libro-content h3 {
+    color: #5b391d;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .libro-content .fecha {
+    color: #a0845c;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .libro-content p {
+    color: #4a3728;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .libro-buttons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .btn-primary {
+    background-color: #5b391d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #6d3d0f;
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: #5b391d;
+    padding: 10px 20px;
+    border: 2px solid #5b391d;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .btn-secondary:hover {
+    background-color: #5b391d;
+    color: white;
+  }
+</style>
+<section id="libros" class="libros">
+  <div class="container">
+    <h2>Mis Libros</h2>
+    <p class="libros-subtitle">
+      Cada libro es un viaje emocional, una invitación a explorar las profundidades del alma humana y encontrar belleza
+      en las historias cotidianas.
+    </p>
+
+    <div class="libros-grid">
+      <div class="libro-card">
+        <div class="libro-image">📖</div>
+        <div class="libro-content">
+          <h3>La Machi</h3>
+          <p class="fecha">Publicado en 2022</p>
+          <p>
+            Una emotiva historia sobre el reencuentro con uno mismo a través del perdón y la sanación interior. Carmen,
+            una mujer de mediana edad, debe enfrentar los fantasmas de su pasado para encontrar la paz interior.
+          </p>
+          <div class="libro-buttons">
+            <a href="#" class="link btn-primary">Más información</a>
+            <a href="#" class="link btn-secondary">Dónde comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="libro-card">
+        <div class="libro-image">🌅</div>
+        <div class="libro-content">
+          <h3>La Herencia</h3>
+          <p class="fecha">Publicado en 2024</p>
+          <p>
+            Una novela sobre segundas oportunidades y el poder transformador del amor. Dos personas que han perdido la
+            esperanza se encuentran en el momento menos esperado.
+          </p>
+          <div class="libro-buttons">
+            <a href="#" class="btn-primary">Más información</a>
+            <a href="#" class="btn-secondary">Dónde comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

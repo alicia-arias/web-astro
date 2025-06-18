@@ -1,0 +1,214 @@
+<section id="contacto" class="contacto">
+  <div class="container">
+    <h2>Conectemos</h2>
+    <p class="contacto-subtitle">
+      Me encanta escuchar a mis lectores. Ya sea para compartir tus pensamientos sobre mis libros o simplemente para
+      charlar sobre literatura, estaré encantada de conocerte.
+    </p>
+
+    <div class="contacto-content">
+      <div class="contacto-form">
+        <h3>Enviame un mensaje</h3>
+        <form>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Comparte tus pensamientos, preguntas o simplemente salúdame..."
+              required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Enviar mensaje</button>
+        </form>
+      </div>
+
+      <div class="contacto-info">
+        <h3>Otras formas de contacto</h3>
+
+        <div class="contacto-item">
+          <div class="contacto-icon" style="font-size: 3.2rem">✉</div>
+          <div class="contacto-details">
+            <h4>Email</h4>
+            <p>aliciaa44@hotmail.com</p>
+          </div>
+        </div>
+
+        <div class="contacto-item">
+          <div class="contacto-icon">📍</div>
+          <div class="contacto-details">
+            <h4>Ubicación</h4>
+            <p>Neuquén, Argentina</p>
+          </div>
+        </div>
+
+        <div class="colaboraciones">
+          <h4>¿Interesado en colaboraciones?</h4>
+          <p>
+            Estoy abierta a participar en eventos literarios, clubes de lectura, entrevistas y colaboraciones
+            editoriales. No dudes en contactarme para explorar posibilidades de trabajar juntos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contacto {
+    padding: 100px 0;
+    background-color: #ffffff;
+  }
+
+  .contacto h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #5b391d;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  .contacto-subtitle {
+    text-align: center;
+    color: #a0845c;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacto-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  .contacto-form {
+    background-color: #f8f6f2;
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  .contacto-form h3 {
+    color: #5b391d;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .form-group {
+    margin-bottom: 25px;
+  }
+
+  .form-group label {
+    display: block;
+    color: #4a3728;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e8e2d8;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #5b391d;
+  }
+
+  .form-group textarea {
+    height: 120px;
+    resize: vertical;
+  }
+
+  .submit-btn {
+    background-color: #5b391d;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+
+  .submit-btn:hover {
+    background-color: #6d3d0f;
+  }
+
+  .contacto-info {
+    padding: 40px 0;
+  }
+
+  .contacto-info h3 {
+    color: #5b391d;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .contacto-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .contacto-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f7e2b3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .contacto-details h4 {
+    color: #4a3728;
+    margin-bottom: 5px;
+  }
+
+  .contacto-details p {
+    color: #a0845c;
+  }
+
+  .colaboraciones {
+    background-color: #f8f6f2;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+
+  .colaboraciones h4 {
+    color: #5b391d;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+
+  .colaboraciones p {
+    color: #4a3728;
+    line-height: 1.7;
+  }
+</style>
+
+
+
+<script type="module" src="/src/scripts/form.js"></script>
