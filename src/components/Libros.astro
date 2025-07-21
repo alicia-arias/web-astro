@@ -1,3 +1,63 @@
+---
+  import machi from "../assets/machi.png";
+  import herencia from "../assets/la-herencia.jpg";
+---
+<section id="libros" class="libros">
+  <div class="container">
+    <h2>Mis Libros</h2>
+    <p class="libros-subtitle">
+      Cada libro es un viaje emocional, una invitación a explorar las profundidades del alma humana y encontrar belleza
+      en las historias cotidianas.
+    </p>
+
+    <div class="libros-grid">
+      <div class="libro-card">
+        <div class="libro-image">
+          <img src={machi.src} alt="La Machi" />
+        </div>
+        <div class="libro-content">
+          <h3>La Machi</h3>
+          <p class="fecha">Publicado en 2022</p>
+          <p>
+            Malen sale de su zona de confort. La vida que conocía. Para comenzar la búsqueda del sentido de su vida.
+            Ligada a la historia del volcán Lanín, en un pueblo de la Cordillera de los Andes. En esa búsqueda conocerá
+            personas que la enriquecerán, con su sabiduría simple, sencilla. Propia de aquellos que viven ligados a la
+            naturaleza. Su encuentro con el paisaje y sus habitantes que le ofrecen una nueva vida. Nuevas experiencias
+            que la orientan hacia el sentido de su existencia. Aquel que la hace plena y feliz.
+          </p>
+          <!-- <div class="libro-buttons">
+            <a href="#" class="link btn-primary">Más información</a>
+            <a href="#" class="link btn-secondary">Dónde comprar</a>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="libro-card">
+        <div class="libro-image">
+          <img src={herencia.src} alt="La Herencia" />
+        </div>
+        <div class="libro-content">
+          <h3>La Herencia</h3>
+          <p class="fecha">Publicado en 2024</p>
+          <p>
+            Me llamo Andrés y si estás leyendo esto es porque ya estoy muerto. Mi vida, como la de todos ustedes, estuvo
+            llena de éxitos y fracasos, momentos felices y otros no tanto. Lo que marcó mi existencia fue la pérdida
+            del amor de mi vida. Justo en el momento de mayor felicidad. No soy muy original ¿no? Pero estamos hablando
+            de mi vida. Ahora, en la vejez, siento que me equivoqué al pensar que mi historia se terminaba con la de
+            ella. Nunca me pude imaginar que, a pesar de lo avanzado de mi edad, la vida me daría otra oportunidad. Me
+            permitiría morir en paz. Gracias a un ángel, llamado Emilia, que apareció llenando de magia mis últimos
+            días. Un encuentro entre dos generaciones, difícil de concebir en esta época. Un hombre que se encuentra en
+            el ocaso de su vida; una joven que empieza a vivir. El AMOR, ilumina sus existencias.
+          </p>
+          <!-- <div class="libro-buttons">
+            <a href="#" class="btn-primary">Más información</a>
+            <a href="#" class="btn-secondary">Dónde comprar</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <style>
   .libros {
     padding: 100px 0;
@@ -21,11 +81,11 @@
 
   .libros-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
   }
 
   .libro-card {
+    display: flex;
     background: white;
     border-radius: 10px;
     overflow: hidden;
@@ -41,16 +101,24 @@
   }
 
   .libro-image {
-    height: 250px;
+    flex: 0 0 250px;
     background: linear-gradient(135deg, #e8e2d8, #d4c4b0);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
     color: #5b391d;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px 0 0 10px;
+      object-fit: cover;
+    }
   }
 
   .libro-content {
+    flex: 1;
     padding: 30px;
   }
 
@@ -107,47 +175,10 @@
     background-color: #5b391d;
     color: white;
   }
+
+  @media (max-width: 768px) {
+    .libro-card {
+      flex-direction: column;
+    }
+  }
 </style>
-<section id="libros" class="libros">
-  <div class="container">
-    <h2>Mis Libros</h2>
-    <p class="libros-subtitle">
-      Cada libro es un viaje emocional, una invitación a explorar las profundidades del alma humana y encontrar belleza
-      en las historias cotidianas.
-    </p>
-
-    <div class="libros-grid">
-      <div class="libro-card">
-        <div class="libro-image">📖</div>
-        <div class="libro-content">
-          <h3>La Machi</h3>
-          <p class="fecha">Publicado en 2022</p>
-          <p>
-            Una emotiva historia sobre el reencuentro con uno mismo a través del perdón y la sanación interior. Carmen,
-            una mujer de mediana edad, debe enfrentar los fantasmas de su pasado para encontrar la paz interior.
-          </p>
-          <div class="libro-buttons">
-            <a href="#" class="link btn-primary">Más información</a>
-            <a href="#" class="link btn-secondary">Dónde comprar</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="libro-card">
-        <div class="libro-image">🌅</div>
-        <div class="libro-content">
-          <h3>La Herencia</h3>
-          <p class="fecha">Publicado en 2024</p>
-          <p>
-            Una novela sobre segundas oportunidades y el poder transformador del amor. Dos personas que han perdido la
-            esperanza se encuentran en el momento menos esperado.
-          </p>
-          <div class="libro-buttons">
-            <a href="#" class="btn-primary">Más información</a>
-            <a href="#" class="btn-secondary">Dónde comprar</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>

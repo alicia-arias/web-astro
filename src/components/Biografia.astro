@@ -1,73 +1,76 @@
+---
+import avatar from "../assets/alicia.jpg"; // o una URL
+---
+
 <section id="biografia" class="biografia">
   <div class="container">
-    <div class="biografia-content">
-      <div class="biografia-text">
-        <h2>Mi Historia</h2>
-        <p>
-          Desde pequeña, encontré refugio entre las páginas de los libros. Crecí en un pequeño pueblo donde las
-          historias se transmitían de generación en generación, y fue ahí donde descubrí mi pasión por dar vida a las
-          palabras.
-        </p>
-
-        <p>
-          Estudié Literatura en la Universidad Complutense de Madrid, donde profundicé en mi amor por la narrativa
-          contemporánea. Mi primera novela, "Susurros del Alma", nació de la necesidad de explorar las complejidades del
-          corazón humano.
-        </p>
-
-        <p>
-          A lo largo de mi carrera, he publicado cinco novelas que han tocado los corazones de miles de lectores. Cada
-          historia que escribo es un pedazo de mi alma, una invitación a reflexionar sobre la vida, el amor y los lazos
-          que nos unen como humanidad.
-        </p>
-      </div>
-      <div class="biografia-image">
-        <img
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRThFMkQ4Ii8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE2MCIgcj0iNDAiIGZpbGw9IiM4QjQ1MTMiLz4KPHBhdGggZD0iTTE1MCAyNDBDMTUwIDIyMCAxNzAgMjAwIDIwMCAyMDBDMjMwIDIwMCAyNTAgMjIwIDI1MCAyNDBWMzAwSDE1MFYyNDBaIiBmaWxsPSIjOEI0NTEzIi8+CjxwYXRoIGQ9Ik0xNzAgMTgwQzE3MCA5MCAyMDAgMTIwIDIwMCAxMjBDMjAwIDEyMCAyMzAgOTAgMjMwIDE4MEMyMzAgMTkwIDIyMCAyMDAgMjAwIDIwMEMxODAgMjAwIDE3MCAyMDAgMTcwIDE4MFoiIGZpbGw9IiM4QjQ1MTMiLz4KPHRleHQgeD0iMjAwIiB5PSIzNTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4QjQ1MTMiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhIiBmb250LXNpemU9IjE0Ij5Fc2NyaXRvcmE8L3RleHQ+Cjwvc3ZnPgo="
-          alt="Alicia Susana Arias - Escritora"
-        />
-      </div>
-    </div>
+    <h2>Sobre mí</h2>
+    <img src={avatar.src} alt="Alicia Susana Arias" class="avatar-flotante" />
+    <p>
+      Hola, soy <strong>Alicia</strong>. Nací en Cipolletti, Río Negro, pero desde hace ya varios años vivo
+      en la ciudad de Neuquén, que es donde hoy construyo mi vida y mis historias. Soy licenciada en Servicio Social,
+      carrera que estudié en la Universidad Nacional del Comahue. Fue también en esa universidad donde participé de
+      talleres literarios que me ayudaron a descubrir y afianzar mi voz como escritora.
+    </p>
+    <p>
+      Escribo cuentos desde principios de los 2000. Algunos siguen guardados en mis cuadernos, otros encontraron su
+      lugar en lecturas compartidas en tertulias literarias. Entre mis textos más queridos están <em>La abuela</em>, <em
+        >El Café de Leo</em
+      >, <em>Tarde de viernes en el Museo</em> y <em>Envejecer Juntos</em>.
+    </p>
+    <p>
+      En 2022 tuve la alegría de participar con tres narraciones en la antología <em>Pluma Cafelaria – Tercera Dosis</em
+      >, y ese mismo año publiqué mi primera novela: <em>La Machi</em>. <em>La Herencia</em> es mi segunda novela, un proyecto
+      que también me dio muchas alegrías.
+    </p>
+    <p>
+      Escribo porque me gusta observar el mundo y transformarlo en palabras. Y, sobre todo, porque disfruto mucho
+      compartir esas historias con otros.
+    </p>
   </div>
 </section>
 
 <style>
   .biografia {
+    /* max-width: 800px; */
+    margin: 0 auto;
     padding: 100px 0;
+    color: #6d5a47;
     background-color: #ffffff;
   }
 
-  .biografia-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-  }
-
-  .biografia-text h2 {
+  .biografia h2 {
+    text-align: center;
     font-size: 3rem;
     color: #5b391d;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: 300;
   }
-
-  .biografia-text p {
+  .biografia p {
     font-size: 1.1rem;
-    margin-bottom: 20px;
-    color: #4a3728;
-    line-height: 1.8;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
   }
 
-  .biografia-image {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  .biografia .avatar-flotante {
+    float: right;
+    width: 240px;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   }
 
-  .biografia-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+  @media (max-width: 600px) {
+    .biografia .avatar-flotante {
+      float: none;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    .biografia {
+      text-align: center;
+    }
   }
 </style>
